@@ -74,6 +74,25 @@ src/painradar/
 config/perfiles.yaml   ← el único archivo que hay que tocar para cambiar el criterio
 ```
 
+## Documentación viva
+
+El comportamiento del sistema está especificado en `openspec/specs/`, y esa es
+la fuente de verdad — no el código. La regla del proyecto es que la spec se
+actualiza en el mismo turno que el código (ver [CLAUDE.md](CLAUDE.md)).
+
+```bash
+openspec validate --all --strict   # 5 capacidades, 24 requisitos, 39 escenarios
+openspec list
+```
+
+| Capacidad | Qué garantiza |
+|---|---|
+| `ingesta-oportunidades` | Contrato común, dedupe, registro de resultado, aislamiento de fallos |
+| `fuentes-ventas` | Datos suficientes para decidir una postulación, respeto de límites de API |
+| `fuentes-contribuciones` | Prioridad a lo no respondido y **ninguna publicación automática** |
+| `configuracion-criterio` | Criterio y secretos separados; arranque sin credenciales |
+| `cli-operacion` | Inspección y ejecución manual |
+
 ## Estado
 
 - **Fase 1 — completa.** Ingesta funcionando en 4 fuentes, dedupe verificado,

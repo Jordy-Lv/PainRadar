@@ -22,6 +22,10 @@ context: |
     - config/perfiles.yaml es el unico sitio donde vive el criterio.
       Cambiar el criterio no debe requerir tocar codigo.
 
+  Regla de proceso: la documentacion OpenSpec se actualiza en el mismo turno
+  que el codigo. `openspec validate --all --strict` debe pasar antes de dar
+  cualquier trabajo por cerrado. Ver CLAUDE.md.
+
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.
 # Example:
