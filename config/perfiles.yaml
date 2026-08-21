@@ -1,0 +1,78 @@
+# ============================================================================
+# perfiles.yaml — el único archivo que hay que tocar para cambiar el criterio.
+#
+# Los verticales los comparten los dos carriles: definen QUÉ sé hacer.
+# Lo que cambia por carril es qué merece mi tiempo (secciones sales/contrib).
+#
+# Los valores de la fase 0 (descubrimiento) son provisionales a propósito:
+# se ajustan con datos reales tras 10-14 días, no antes.
+# ============================================================================
+
+verticales:
+  - id: datos
+    keywords:
+      [sql server, oracle, postgres, postgresql, mysql, etl, elt, migración,
+       migration, power bi, tableau, data pipeline, data warehouse, dbt,
+       snowflake, bigquery, airflow, pandas]
+    angulo: "Especialista en bases de datos y pipelines de datos"
+    tarifa_min_usd: 30
+
+  - id: automatizacion
+    keywords:
+      [power automate, zapier, n8n, make.com, scraping, web scraping, rpa,
+       integración api, api integration, selenium, playwright, automatización,
+       automation, google apps script]
+    angulo: "Automatizo procesos manuales de empresa"
+    tarifa_min_usd: 28
+
+  - id: backend
+    keywords:
+      [python, fastapi, django, flask, java, spring, spring boot, api rest,
+       rest api, microservicios, microservices, celery, redis, docker,
+       sqlalchemy, backend]
+    angulo: "Backend y APIs en Python/Java"
+    tarifa_min_usd: 30
+
+# ---------------------------------------------------------------------------
+# TRACK VENTAS — aquí el filtro protege el tiempo y los Connects.
+# ---------------------------------------------------------------------------
+sales:
+  filtros:
+    presupuesto_min_usd: 100
+    max_propuestas_existentes: 25
+    max_antiguedad_horas: 12
+    paises_excluidos: []
+    keywords_veto:
+      [wordpress theme, logo design, data entry, entrada de datos,
+       social media manager, virtual assistant, article writing]
+
+# ---------------------------------------------------------------------------
+# TRACK CONTRIBUCIONES — aquí el filtro protege la reputación.
+# El criterio no es "¿me pagan?" sino "¿puedo aportar algo real, rápido,
+# donde todavía nadie ha respondido?".
+# ---------------------------------------------------------------------------
+contrib:
+  filtros:
+    max_antiguedad_horas: 12      # llegar temprano importa igual que en ventas
+    max_respuestas_existentes: 2  # si ya hay hilo, mi respuesta se pierde
+    solo_sin_responder: true
+    max_esfuerzo_horas: 2.0       # lo estima el clasificador; más que esto no escala
+    keywords_veto:
+      [homework, tarea, do my assignment, urgent help please]
+
+  github:
+    labels: ["help wanted", "good first issue", "bug"]
+    languages: [Python, SQL, Java]
+    min_stars: 50                 # repos con tracción: la contribución se ve
+    excluir_repos: []
+
+  stackexchange:
+    sites: [stackoverflow, dba, softwareengineering]
+    tags:
+      [python, sql, sql-server, postgresql, oracle, fastapi, django, pandas,
+       etl, web-scraping, spring-boot]
+
+  reddit:
+    subreddits:
+      [learnpython, SQL, dataengineering, PowerBI, learnprogramming,
+       webscraping, automation, FastAPI, django]

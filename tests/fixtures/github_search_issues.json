@@ -1,0 +1,36 @@
+{
+  "total_count": 2,
+  "incomplete_results": false,
+  "items": [
+    {
+      "id": 2891234567,
+      "number": 4412,
+      "html_url": "https://github.com/pandas-dev/pandas/issues/4412",
+      "repository_url": "https://api.github.com/repos/pandas-dev/pandas",
+      "title": "read_sql falla con tipos DECIMAL de SQL Server",
+      "body": "Al leer una tabla con columnas DECIMAL(18,4) desde SQL Server via pyodbc, los valores llegan como object en vez de float64. Reproducible con pandas 2.2.\n\n```python\npd.read_sql('SELECT * FROM ventas', conn)\n```",
+      "user": {"login": "dataeng_mx"},
+      "labels": [{"name": "bug"}, {"name": "help wanted"}, {"name": "IO SQL"}],
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-08-21T09:14:00Z",
+      "updated_at": "2026-08-21T09:14:00Z",
+      "reactions": {"total_count": 3, "+1": 3}
+    },
+    {
+      "id": 2891234999,
+      "number": 881,
+      "html_url": "https://github.com/tiangolo/fastapi/pull/881",
+      "repository_url": "https://api.github.com/repos/tiangolo/fastapi",
+      "title": "Añade soporte para X",
+      "body": "PR abierto por otra persona.",
+      "user": {"login": "alguien"},
+      "labels": [{"name": "help wanted"}],
+      "state": "open",
+      "comments": 0,
+      "created_at": "2026-08-21T08:00:00Z",
+      "pull_request": {"url": "https://api.github.com/repos/tiangolo/fastapi/pulls/881"},
+      "reactions": {"total_count": 0}
+    }
+  ]
+}

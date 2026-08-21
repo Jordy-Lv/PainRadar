@@ -1,0 +1,105 @@
+{
+  "status": "success",
+  "result": {
+    "projects": [
+      {
+        "id": 38472911,
+        "owner_id": 74829301,
+        "title": "Migración de base de datos SQL Server a PostgreSQL",
+        "status": "active",
+        "seo_url": "data-processing/migracion-base-datos-sql",
+        "currency": {"id": 1, "code": "USD", "sign": "$", "name": "US Dollar"},
+        "description": "Tenemos una base SQL Server 2016 con 40 tablas y varios procedimientos almacenados. Necesitamos migrarla a PostgreSQL 15 conservando los datos y reescribiendo los stored procedures. Documentación disponible.",
+        "preview_description": "Tenemos una base SQL Server 2016 con 40 tablas...",
+        "jobs": [
+          {"id": 30, "name": "SQL"},
+          {"id": 305, "name": "PostgreSQL"},
+          {"id": 745, "name": "Database Administration"}
+        ],
+        "submitdate": 1755770400,
+        "time_submitted": 1755770400,
+        "time_updated": 1755770460,
+        "budget": {"minimum": 750.0, "maximum": 1500.0, "currency_id": 1},
+        "type": "fixed",
+        "bidperiod": 7,
+        "bid_stats": {"bid_count": 4, "bid_avg": 980.0},
+        "language": "es",
+        "hireme": false,
+        "frontend_project_status": "open",
+        "local": false,
+        "nonpublic": false
+      },
+      {
+        "id": 38472955,
+        "owner_id": 74829444,
+        "title": "Automatizar reportes de Excel con Python",
+        "status": "active",
+        "seo_url": "python/automatizar-reportes-excel",
+        "currency": {"id": 3, "code": "EUR", "sign": "€", "name": "Euro"},
+        "description": "Cada lunes generamos 12 reportes de Excel a mano a partir de exportaciones de nuestro ERP. Buscamos automatizar el proceso completo con Python y dejarlo corriendo en un servidor.",
+        "preview_description": "Cada lunes generamos 12 reportes de Excel a mano...",
+        "jobs": [
+          {"id": 13, "name": "Python"},
+          {"id": 39, "name": "Excel"},
+          {"id": 1233, "name": "Automation"}
+        ],
+        "submitdate": 1755772100,
+        "time_submitted": 1755772100,
+        "time_updated": 1755772100,
+        "budget": {"minimum": 30.0, "maximum": 60.0, "currency_id": 3},
+        "type": "hourly",
+        "bidperiod": 7,
+        "bid_stats": {"bid_count": 31, "bid_avg": 42.0},
+        "language": "es",
+        "hireme": false,
+        "frontend_project_status": "open",
+        "local": false,
+        "nonpublic": false
+      },
+      {
+        "id": 38472999,
+        "owner_id": 74829301,
+        "title": "Diseño de logo para cafetería",
+        "status": "active",
+        "seo_url": "graphic-design/diseno-logo-cafeteria",
+        "currency": {"id": 1, "code": "USD", "sign": "$", "name": "US Dollar"},
+        "description": "Necesito un logo moderno para una cafetería nueva. Entregar en AI y PNG.",
+        "preview_description": "Necesito un logo moderno para una cafetería nueva.",
+        "jobs": [{"id": 20, "name": "Graphic Design"}, {"id": 17, "name": "Logo Design"}],
+        "submitdate": 1755773000,
+        "time_submitted": 1755773000,
+        "time_updated": 1755773000,
+        "budget": {"minimum": 10.0, "maximum": 30.0, "currency_id": 1},
+        "type": "fixed",
+        "bidperiod": 7,
+        "bid_stats": {"bid_count": 58, "bid_avg": 22.0},
+        "language": "es",
+        "hireme": false,
+        "frontend_project_status": "open",
+        "local": false,
+        "nonpublic": false
+      }
+    ],
+    "users": {
+      "74829301": {
+        "id": 74829301,
+        "username": "acme_data",
+        "display_name": "ACME Data",
+        "location": {"country": {"name": "United States", "code": "us"}},
+        "status": {"payment_verified": true, "email_verified": true, "identity_verified": true},
+        "employer_reputation": {
+          "entire_history": {"overall": 4.8, "reviews": 27, "complete": 25}
+        }
+      },
+      "74829444": {
+        "id": 74829444,
+        "username": "nuevo_cliente_es",
+        "display_name": "Nuevo Cliente",
+        "location": {"country": {"name": "Spain", "code": "es"}},
+        "status": {"payment_verified": false, "email_verified": true},
+        "employer_reputation": {"entire_history": {"overall": 0, "reviews": 0}}
+      }
+    },
+    "total_count": 3
+  }
+}

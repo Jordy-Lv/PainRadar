@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "tags": ["python", "sqlalchemy", "postgresql"],
+      "owner": {"display_name": "jdoe", "reputation": 41},
+      "is_answered": false,
+      "view_count": 7,
+      "answer_count": 0,
+      "score": 0,
+      "creation_date": 1755775000,
+      "question_id": 79412233,
+      "link": "https://stackoverflow.com/questions/79412233/sqlalchemy-bulk-insert-lento-en-postgres",
+      "title": "SQLAlchemy bulk_insert_mappings muy lento en Postgres",
+      "body": "<p>Estoy insertando 200k filas con <code>bulk_insert_mappings</code> y tarda 4 minutos.</p><p>¿Hay alguna forma de acelerarlo?</p>"
+    }
+  ],
+  "has_more": false,
+  "quota_max": 10000,
+  "quota_remaining": 9871
+}

@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Entorno y secretos
+.env
+*.db
+*.db-journal
+*.sqlite3
+data/
+
+# Sistema
+.DS_Store
+
+# OpenSpec / herramientas locales
+.claude/settings.local.json

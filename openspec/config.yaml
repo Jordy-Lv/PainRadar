@@ -1,0 +1,45 @@
+schema: spec-driven
+
+context: |
+  Language: spanish
+  All artifacts must be written in spanish.
+  Keep OpenSpec structural headings and SHALL/MUST keywords in English.
+
+  PainRadar detecta oportunidades en dos carriles con un solo pipeline:
+    - sales:   trabajo pagado (Freelancer.com, Workana via IMAP, Upwork).
+               Criterio: presupuesto, competencia y latencia.
+    - contrib: ayudar en abierto (GitHub, Stack Exchange, Reddit).
+               Criterio: puedo aportar algo real, rapido, donde nadie respondio.
+               Construye la reputacion que a un perfil nuevo le falta.
+
+  Invariantes que ninguna propuesta puede romper:
+    - El sistema NUNCA postula ni publica solo. Solo genera borradores.
+    - Toda fuente nueva se implementa como adapter tras el Protocol de
+      sources/base.py; el pipeline aguas abajo no cambia.
+    - Toda oportunidad guardada nace con su fila en `outcome`: sin eso no hay
+      reporte semanal ni forma de ajustar el filtro con datos.
+    - Los tests no tocan la red. Se usan fixtures grabadas.
+    - config/perfiles.yaml es el unico sitio donde vive el criterio.
+      Cambiar el criterio no debe requerir tocar codigo.
+
+# Per-artifact rules (optional)
+# Add custom rules for specific artifacts.
+# Example:
+#   rules:
+#     proposal:
+#       - Keep proposals under 500 words
+#       - Always include a "Non-goals" section
+#     tasks:
+#       - Break tasks into chunks of max 2 hours
+
+# Per-operation guidance (optional)
+# Add advisory guidance for how apply and archive work should be conducted.
+# This is separate from artifact rules above.
+# Example:
+#   operations:
+#     apply:
+#       guidance:
+#         - Keep test summaries concise
+#     archive:
+#       guidance:
+#         - Summarize the archive outcome before finishing

@@ -1,0 +1,41 @@
+{
+  "kind": "Listing",
+  "data": {
+    "after": "t3_abc123",
+    "children": [
+      {
+        "kind": "t3",
+        "data": {
+          "id": "1abc234",
+          "subreddit": "learnpython",
+          "title": "¿Cómo hago un ETL simple de CSV a Postgres?",
+          "selftext": "Tengo 30 CSVs que llegan cada día y quiero cargarlos a Postgres sin duplicar filas. ¿Qué enfoque recomiendan?",
+          "permalink": "/r/learnpython/comments/1abc234/como_hago_un_etl_simple/",
+          "author": "novato_datos",
+          "created_utc": 1755776000,
+          "num_comments": 0,
+          "score": 2,
+          "link_flair_text": "Help",
+          "stickied": false,
+          "over_18": false
+        }
+      },
+      {
+        "kind": "t3",
+        "data": {
+          "id": "1abc999",
+          "subreddit": "learnpython",
+          "title": "Hilo semanal fijado",
+          "selftext": "Reglas del subreddit",
+          "permalink": "/r/learnpython/comments/1abc999/hilo_semanal/",
+          "author": "AutoModerator",
+          "created_utc": 1755700000,
+          "num_comments": 120,
+          "score": 40,
+          "stickied": true,
+          "over_18": false
+        }
+      }
+    ]
+  }
+}
