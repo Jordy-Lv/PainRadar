@@ -101,3 +101,8 @@ openspec list
   captura todo sin filtrar y sin gastar en IA, para decidir los verticales con
   datos en vez de con intuición.
 - Fases 2-4: filtro, IA, Telegram, reportes y deploy.
+
+## Contribuir y licencia
+
+Lee [CONTRIBUTING.md](CONTRIBUTING.md) antes de abrir un PR. Publicado bajo
+la [licencia MIT](LICENSE).
